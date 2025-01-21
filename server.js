@@ -24,3 +24,7 @@ app.listen(port,()=>{
 
 const user=require("./Router/user");
 app.use("/api/user/",user);
+
+app.get("/api",(req,res)=>{
+  console.log(req.query.name);
+})
